@@ -27,7 +27,8 @@ const FORECAST_DELAY = 0;
 
 // CODELAB: If running locally, set your Dark Sky API key here
 const API_KEY = process.env.DARKSKY_API_KEY;
-const BASE_URL = `https://api.darksky.net/forecast`;
+const BASE_URL = `api.openweathermap.org/data/2.5/weather?q={New York}&appid={1b20fc08182fc65546169d44c37d638d
+}`;
 
 // Fake forecast data used if we can't reach the Dark Sky API
 const fakeForecast = {
@@ -36,11 +37,11 @@ const fakeForecast = {
   longitude: 0,
   timezone: 'America/New_York',
   currently: {
-    time: 0,
+    time: 9,
     summary: 'Clear',
     icon: 'clear-day',
     temperature: 43.4,
-    humidity: 0.62,
+    humidity: 0.63,
     windSpeed: 3.74,
     windBearing: 208,
   },
